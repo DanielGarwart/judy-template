@@ -17,7 +17,6 @@ if(NOT DEFINED JUDY_OPTIMIZE_FLAGS)
   if(CMAKE_COMPILER_IS_GNUCC)
     set(JUDY_OPTIMIZE_FLAGS "-march=native")
     set(JUDY_OPTIMIZE_FLAGS "${JUDY_OPTIMIZE_FLAGS} -flto")
-    endif(DEFINED CMAKE_C_COMPILER_VERSION)
   #elseif(MSVC)
     #  set(JUDY_OPTIMIZE_FLAGS "...") # <--- set MSVC flags here <---
   else()
